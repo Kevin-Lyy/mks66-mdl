@@ -64,6 +64,8 @@ def run(filename):
         elif c == 'box':
             if (command['constants']):
                 reflect = command['constants']
+            else:
+                reflect = '.white'
             add_box(tmp,
                     args[0], args[1], args[2],
                     args[3], args[4], args[5])
